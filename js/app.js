@@ -27,5 +27,6 @@ const displayData = async () => {
 disc.addEventListener("click", displayData)
 // initially on window load we do not have any data as we have set the data on button click 
 // so to load the data... we set a domContentLoaded listener on window it will load the data even before the button is clicked
+
 window.addEventListener("DOMContentLoaded" , displayData);
 
