@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+
+--LightCyan: hsl(193, 38%, 86%);
+ --NeonGreen: hsl(150, 100%, 66%);
+--GrayishBlue: hsl(217, 19%, 38%);
+ --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+.container-fluid{
+    background: var(--DarkBlue);
+   
+}
+.myCard{
+    width: 450px;
+min-width: 300px;
+  background: var(--DarkGrayishBlue) !important;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+position: relative;
+
+}
+.adviceNo{
+    color: var(--NeonGreen);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding-top: 30px;
+}
+.advice{
+    font-size: 24px;
+    font-weight: 800;
+    padding: 13px 20px;
+    color: var(--LightCyan);
+    text-align: center;
+}
+.disc {
+    background-color: var(--NeonGreen);
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom:-1%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+}
+.disc:hover{
+    box-shadow: 1px 2px 8px 7px var(--NeonGreen);
+}
+.spindisc{
+    background-color: var(--NeonGreen);
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    animation: spin 20s ease-in-out infinite normal;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
